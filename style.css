@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Khula:wght@300;400;600;700;800&display=swap");
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+}
+.app {
+  padding: 50px 0 0 0;
+}
+.header {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 20px;
+}
+
+.tablink_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background: white;
+}
+
+.tablink_items {
+  background-color: #f2f2f2;
+  display: flex;
+  width: 40%;
+  height: 40px;
+}
+
+.tablink_items input[type="radio"] {
+  display: none;
+  width: 33.33%;
+  height: 100%;
+}
+.tablink_items label {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+.tablink_items label img {
+  height: 18px;
+  width: 18px;
+  margin: 0 8px;
+  display: none;
+}
+
+.tablink_items input[type="radio"]:checked + label {
+  background-color: black;
+  color: white;
+}
+.tablink_items input[type="radio"]:checked + label img {
+  display: block;
+  background-color: black;
+}
+
+.tabcard_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 48px;
+}
+.tabcontent {
+  display: flex;
+  width: 50%;
+}
+.product-item {
+  width: 25%;
+  height: auto;
+}
+
+.card_top_container {
+  position: relative;
+  display: inline-block;
+}
+
+.product_img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  border-radius: 4px;
+  object-fit: fill;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  color: black;
+  padding: 5px;
+  margin: 4px 0 0 4px;
+  border-radius: 4px;
+  font-family: "Khula", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 10px;
+}
+.cart_btn {
+  background: #000;
+  color: white;
+  width: 100%;
+  height: 32px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+}
+
+.card_middle_container,
+.card_bottom_container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 0 4px;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: "Khula", sans-serif;
+}
+.card_bottom_container {
+  justify-content: space-between;
+  gap: 0;
+}
+
+.black_dot {
+  height: 4px;
+  width: 4px;
+  background: #000;
+  border-radius: 100%;
+}
+
+.card_bottom_container {
+  position: relative;
+}
+
+.compare {
+  position: relative;
+  z-index: 1;
+}
+
+.compare::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #8f8f8f;
+  z-index: 0;
+}
+.compare {
+  color: #8f8f8f;
+}
+.discount_per {
+  color: #ff3737;
+}
+
+@media only screen and (max-width: 767px) {
+  .product-item {
+    width: 100%;
+    height: 70vh;
+    flex-direction: column; 
+  }
+  .tabcontent {
+    flex-direction: column;
+  }
+  .tablink_items {
+    width: 80%;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .product-item {
+    width: 48%; 
+  }
+}

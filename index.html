@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MarmetoL2Assignment</title>
+  </head>
+
+  <body class="app">
+    <div>
+      <div class="header">
+        <h1>SELECT YOUR CHOICE</h1>
+      </div>
+      <div class="tablink_container">
+        <div class="tablink_items">
+          <input type="radio" name="category" id="menTab" value="Men" checked />
+          <label for="menTab"><img src="./assets/men.svg" alt="" /> Men </label>
+
+          <input type="radio" name="category" id="womenTab" value="Women" />
+          <label for="womenTab"
+            ><img src="./assets/women.svg" alt="" /> Women
+          </label>
+
+          <input type="radio" name="category" id="kidsTab" value="Kids" />
+          <label for="kidsTab"
+            ><img src="./assets/kids.svg" alt="" /> Kids
+          </label>
+        </div>
+      </div>
+      <div class="tabcard_container">
+        <div id="men" class="tabcontent"></div>
+
+        <div id="women" class="tabcontent"></div>
+
+        <div id="kids" class="tabcontent"></div>
+      </div>
+    </div>
+    <!-- Happy coding 😊 -->
+    <script src="./script.js"></script>
+  </body>
+</html>
